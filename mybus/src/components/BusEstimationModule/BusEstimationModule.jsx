@@ -55,7 +55,7 @@ const BusEstimationModule = ({ source, destination, timestamp, busNumber, capaci
       <div className="bus-details">
         <div className="cardd">
           <div className="timestamp">
-            <h3><IoTimeOutline className='icon' />{convertFloatToTime(busData.timestamp)}</h3>
+            <h3><IoTimeOutline className='icon' />{busData.timestamp}</h3>
           </div>
           <div className="ani1">
             <Lottie options={defaultOptions} height={150} width={150} isClickToPauseDisabled={true} />
