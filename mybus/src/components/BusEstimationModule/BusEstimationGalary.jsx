@@ -38,9 +38,9 @@ const BusGallery = ({ busDataList }) => {
         {busDataList.slice(startIndex, startIndex + 3).map((busData, index) => (
           <div className="bus-item" key={index}>
             <BusEstimationModule
-              timestamp={busData.estimatedTime}
-              busNumber={busData.bus.licensePlate}
-              capacity_filled={busData.capacity_filled}
+              timestamp={busData.timestamp}
+              busNumber={busData.busNumber}
+              capacity_filled={busData.passNumber}
             />
           </div>
         ))}
