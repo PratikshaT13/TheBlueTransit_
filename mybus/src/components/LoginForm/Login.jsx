@@ -40,7 +40,7 @@ const LoginForm = ({ onLogin }) => {
     try {
       const data = await authService.loginS(username, password);
       console.log('Login successful:', data);
-      if (data.success) {  // Adjust this condition based on your API's response
+      if (data) {  // Adjust this condition based on your API's response
         onLogin(username);  // Set login state to true and pass the username
         navigate('/homepage');
       } else {
